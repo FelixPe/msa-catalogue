@@ -1,7 +1,7 @@
-package de.predi8.workshop.catalogue;
+package de.predic8.workshop.catalogue;
 
 
-import de.predi8.workshop.catalogue.event.Operation;
+import de.predic8.workshop.catalogue.event.Operation;
 import org.apache.kafka.common.serialization.StringDeserializer;
 import org.springframework.boot.autoconfigure.kafka.KafkaProperties;
 import org.springframework.context.annotation.Bean;

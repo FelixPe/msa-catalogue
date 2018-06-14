@@ -1,4 +1,4 @@
-package de.predi8.workshop.catalogue.event;
+package de.predic8.workshop.catalogue.event;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import org.slf4j.Logger;
@@ -7,15 +7,20 @@ import org.slf4j.LoggerFactory;
 import java.util.HashMap;
 import java.util.Map;
 
-//import static net.logstash.logback.marker.Markers.appendEntries;
+import static net.logstash.logback.marker.Markers.appendEntries;
 
 public class Operation {
 
 	private static final Logger log = LoggerFactory.getLogger(Operation.class);
 
+	public static final String UPDATE = "update";
+	public static final String CREATE = "create";
+	public static final String DELETE = "delete";
+
 	private String bo;
 	private String action;
 	private JsonNode object;
+
 
 	public Operation() {
 	}
@@ -70,6 +75,6 @@ public class Operation {
 		entries.put("object", object);
 		entries.put("direction", direction);
 
-//		log.info(appendEntries(entries),"");
+		log.info(appendEntries(entries),"");
 	}
 }

@@ -1,4 +1,4 @@
-package de.predi8.workshop.catalogue.domain;
+package de.predic8.workshop.catalogue.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -6,6 +6,7 @@ import java.math.BigDecimal;
 
 @Entity
 public class Article {
+
 	@Id
 	private String uuid;
 	private String name;
